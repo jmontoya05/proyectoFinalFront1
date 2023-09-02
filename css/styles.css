@@ -5,22 +5,44 @@
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
+    font-weight: 500;
     margin: 0px;
     padding: 0px;
 }
 
 .encabezado{
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 30px 50px;
     padding: 10px 0px;
 }
 
+.barraNavegacion ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.barraNavegacion ul li{
+  padding: 10px;
+}
+
+.barraNavegacion ul li a{
+    color: #242E52;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.barraNavegacion, .botonDesktop {
+    display: none;
+}
+
 .banner{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px 40px;
+    margin: 20px 40px;
 }
 
 .banner img{
@@ -37,26 +59,140 @@
 h1{
     font-size: 50px;
     font-weight: 700;
+    line-height: 58px;
     margin-bottom: 20px;
     text-align: right;
-    line-height: 58px;
 }
 
 .contenidoBanner p{
-    font-weight: 500;
-    text-align: right;
-    margin-bottom: 20px;
     line-height: 26px;
+    text-align: right;
 }
 
-.boton{
-    padding: 10px 20px; 
+.boton{ 
     background-color: #8B48BF;
     border: 0px;
     border-radius: 50px;
+    margin: 20px 0px;
+    padding: 10px 30px;
 }
 
 .boton a{
+    color: #FFFFFF;
+    font-size: 14px;
     text-decoration: none;
-    color: #FFF;
+}
+
+.seccionProfesionales{
+    background-color: #3CDDF3;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.seccionProfesionales h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 41px;
+    margin: 40px 30px 20px 30px;
+}
+
+.seccionProfesionales p{
+ line-height: 24px;
+ margin: 20px 30px 40px 30px;
+}
+
+.seccionArticulos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.seccionArticulos article{
+    margin-left: 60px;
+}
+
+.tituloArticulo{
+    align-items: center;
+    background-color: rgba(139, 72, 191, 0.3);
+    display: flex
+}
+
+.tituloArticulo button{
+    color: #FFFFFF;
+    font-weight: 700;
+    left: -14px;
+    margin: 0px;
+    position: relative;
+}
+
+.tituloArticulo h3{
+    color: #323851;
+    font-weight: 700;
+}
+
+article p{
+    color: #B3B2B7;
+    line-height: 26px;
+    margin: 30px 15px 20px 0px;
+}
+
+.seccionMejorMes{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.seccionMejorMes h2{
+    color: #242E53;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.contenidoMejorMes{
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 20px 20px;
+}
+
+.contenidoMejorMes img{
+    position: relative;
+    bottom: 35px;
+}
+
+.nombreJugador{
+    color: #3F4868;
+    font-weight: 700;
+}
+
+.contenidoMejorMes p{
+    text-align: center;
+    margin: 20px;
+}
+
+.seccionMejoresEquipos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3CDDF3;
+    margin-top: 10px;
+}
+
+.seccionMejoresEquipos h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 40px 60px 0px;
+}
+
+.seccionMejoresEquipos .boton{
+    background-color: #232C50;
+    margin: 40px 0px;
 }
