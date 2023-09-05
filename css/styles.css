@@ -34,10 +34,6 @@
     text-decoration: none;
 }
 
-.barraNavegacion, .botonDesktop {
-    display: none;
-}
-
 .banner{
     display: flex;
     flex-direction: column;
@@ -195,4 +191,79 @@ article p{
 .seccionMejoresEquipos .boton{
     background-color: #232C50;
     margin: 40px 0px;
+}
+
+footer{
+    background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suscripcion{
+    width: 85%;
+    margin: 5px;
+    text-align: center;
+}
+
+#emailUsuario{
+    width: 70%;
+    padding: 10px;
+    margin-right: 5%;
+    margin-top: 40px;
+    border-radius: 50px;
+
+}
+
+.botonForm{
+    color: #FFFFFF;
+}
+
+.menuFooter{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.menuFooter ul{
+    list-style: none;
+}
+
+.menuFooter ul li{
+    padding: 8px;
+}
+
+.menuFooter ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400;   
+}
+
+.redes{
+    margin: 20px 0px;
+    width: 95%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.redes a{
+    margin: 10px 7%;
+}
+
+footer img{
+    margin-top: 10px;
+}
+
+.derechos{
+    margin: 40px;
+    font-size: 13px;
+    color: #8C8C94;
+}
+
+.escritorio {
+    display: none;
+    
 }
