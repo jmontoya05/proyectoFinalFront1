@@ -18,10 +18,15 @@
     padding: 10px 0px;
 }
 
+.barraNavegacion{
+    margin: 0px 15px;
+}
+
 .barraNavegacion ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .barraNavegacion ul li{
@@ -41,15 +46,19 @@
     margin: 20px 40px;
 }
 
-.banner img{
+.imagenPrincipal{
     margin-bottom: 50px;
+}
+
+.imagenPrincipal img{
+    width: 100%;
 }
 
 .contenidoBanner{
     align-items: flex-end;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 h1{
@@ -102,7 +111,7 @@ h1{
 .seccionArticulos{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .seccionArticulos article{
@@ -188,6 +197,19 @@ article p{
     margin: 40px 60px 0px;
 }
 
+.saltoLinea{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.saltoLinea::before{
+    content: "\a";
+    white-space: pre;
+}
+
 .seccionMejoresEquipos .boton{
     background-color: #232C50;
     margin: 40px 0px;
@@ -266,4 +288,121 @@ footer img{
 .escritorio {
     display: none;
     
+}
+
+@media (min-width: 481px) {
+
+
+    .escritorio{
+        display: flex;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .encabezado{
+        justify-content: space-around;
+    }
+
+    .banner{
+        flex-direction: row;
+        margin: 0px 10%;
+        align-items: center;
+    }
+
+    .imagenPrincipal {
+        padding-right: 5%;
+        width: 50%;
+    }
+
+    .contenidoBanner{
+        padding-left: 5%;
+        width: 50%;
+    }
+
+    .seccionProfesionales{
+        background-color: #8B48BF;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .seccionProfesionales h2{
+        width: 50%;
+        margin: 40px 30px;
+        padding-left: 10%;
+    }
+
+    .seccionProfesionales p{
+        width: 50%;
+        margin: 40px 30px;
+        padding-right: 10%;
+    }
+
+    .seccionArticulos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #FAFAFA;
+    }
+
+    .seccionArticulos article{
+        width: 40%;
+        padding: 0px 2%;
+        margin: 0px 0px 20px;
+    }
+
+    .tituloArticulo{
+        background-color: #FAFAFA;
+    }
+
+    .seccionMejorMes h2{
+        margin: 60px 20px;
+    }
+
+    .contenedorMejoresMes{
+        display: flex;
+        margin: 0px 5%;
+        justify-content: space-around;
+    }
+
+    .contenidoMejorMes{
+        margin: 60px 0px 30px;
+    }
+
+    .seccionMejorMes .boton{
+        margin-bottom: 60px;
+    }
+
+    .seccionMejoresEquipos{
+        background-color: #8B48BF;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .seccionMejoresEquipos h2, .saltoLinea{
+        text-align: left;
+        margin: 60px 10%;
+    }
+
+    .seccionMejoresEquipos .boton{
+        background-color: #FFFFFF;
+        margin: 60px 10%;
+    }
+
+    .seccionMejoresEquipos .boton a{
+        color: #8B48BF;
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 5%;
+    }
+
 }

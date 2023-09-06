@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
+    <title>Proyecto Final</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -21,14 +21,16 @@
       <button class="boton escritorio">
         <a href="http://google.com" target="_blank">Contact</a>
       </button>
-      <a class="menuDesplegable" href="#"
+      <a class="menuDesplegable mobile" href="#"
         ><img src="img/icon-hamburger.svg" alt="Menu"
       /></a>
     </header>
     <main>
       <!-- Sección principal -->
       <section class="banner">
-        <img src="img/padel-intro.png" alt="Imagen de jugador de tenis" />
+        <div class="imagenPrincipal">
+          <img src="img/padel-intro.png" alt="Imagen de jugador de tenis" />
+        </div>
         <div class="contenidoBanner">
           <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
           <p>
@@ -43,10 +45,15 @@
       <!-- Sección profesionales -->
       <section class="seccionProfesionales">
         <h2>What´s different between pros?</h2>
-        <p>
+        <p class="mobile">
           Manage provides all the functionality your teas needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams
+        </p>
+        <p class="escritorio">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          aliquet consequat purus sit amet sodales. In faucibus ut nisi eu
+          dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.
         </p>
       </section>
       <!-- Sección articulos -->
@@ -88,40 +95,42 @@
       <!-- Sección mejor del mes -->
       <section class="seccionMejorMes">
         <h2>Best of the month</h2>
-        <article class="contenidoMejorMes">
-          <img src="img/avatar.lebron.png" alt="Imagen Lebron" />
-          <span class="nombreJugador">Lebron</span>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </article>
-        <article class="contenidoMejorMes escritorio">
-          <img src="img/avatar.lebron.png" alt="Imagen Lebron" />
-          <span class="nombreJugador">Lebron</span>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </article>
-        <article class="contenidoMejorMes escritorio">
-          <img src="img/avatar.lebron.png" alt="Imagen Lebron" />
-          <span class="nombreJugador">Lebron</span>
-          <p>
-            Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
-            mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </article>
+        <div class="contenedorMejoresMes">
+          <article class="contenidoMejorMes escritorio">
+            <img src="img/avatar-sanyo.png" alt="Imagen Sanyo" />
+            <span class="nombreJugador">Sanyo</span>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article class="contenidoMejorMes">
+            <img src="img/avatar.lebron.png" alt="Imagen Lebron" />
+            <span class="nombreJugador">Lebron</span>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+          <article class="contenidoMejorMes escritorio">
+            <img src="img/avatar-navarro.png" alt="Imagen Navarro" />
+            <span class="nombreJugador">Navarro</span>
+            <p>
+              Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat
+              mauris, ut suscipit massa ipsum eu neque. Orci varius natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+          </article>
+        </div>
         <button class="boton">
           <a href="http://google.com" target="_blank">More</a>
         </button>
       </section>
       <!-- Sección mejores equipos -->
       <section class="seccionMejoresEquipos">
-        <h2>Get to know the best teams of the year</h2>
+        <h2>Get to know the best <span class="saltoLinea">teams of the year</span></h2>
         <button class="boton">
           <a href="http://google.com" target="_blank">Go for it</a>
         </button>
@@ -130,8 +139,13 @@
     <!-- Footer -->
     <footer>
       <div class="suscripcion">
-        <form action="#" method="POST">
-          <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Update in your inbox..."/>
+        <form action="" method="POST">
+          <input
+            type="email"
+            name="emailUsuario"
+            id="emailUsuario"
+            placeholder="Update in your inbox..."
+          />
           <button type="submit" class="boton botonForm">Go</button>
         </form>
       </div>
