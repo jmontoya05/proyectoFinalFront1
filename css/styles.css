@@ -135,6 +135,7 @@ h1{
 .tituloArticulo h3{
     color: #323851;
     font-weight: 700;
+    padding-right: 10px;
 }
 
 article p{
@@ -263,6 +264,13 @@ footer{
     font-weight: 400;   
 }
 
+.contenedorLogoRedes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .redes{
     margin: 20px 0px;
     width: 95%;
@@ -275,7 +283,7 @@ footer{
     margin: 10px 7%;
 }
 
-footer img{
+.contenedorLogoRedes img{
     margin-top: 10px;
 }
 
@@ -398,11 +406,57 @@ footer img{
     }
 
     footer{
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        padding: 20px 5%;
+        padding: 30px 80px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .contenedorLogoRedes{
+        width: 25%;
+        justify-content: flex-start;
+    }
+
+    .contenedorLogoRedes img{
+        margin: 10px 0px;
+    }
+
+    .redes{
+        order: 1;
+        justify-content: flex-start;
+        margin: 40px 0px 0px;
+    }
+
+    .redes a{
+        margin: 3%;
+    }
+
+    .menuFooter{
+        width: 30%;
+        order: 1;
+        margin: 0px 5px;
+    }
+
+    .suscripcion{
+        width: 35%;
+        order: 2;
+        align-self: flex-start;
+    }
+
+    #emailUsuario{
+        margin-top: 0px;
+    }
+
+    .contenedorDerechos{
+        order: 3;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .derechos{
+        margin: 10px;
     }
 
 }
