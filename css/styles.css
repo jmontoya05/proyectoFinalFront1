@@ -1,466 +1,494 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
 
-
-*{
-    box-sizing: border-box;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0px;
 }
 
-.encabezado{
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 50px;
-    padding: 10px 0px;
+.encabezado {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px;
+  padding: 10px 0px;
 }
 
-.barraNavegacion{
-    margin: 0px 15px;
+.barraNavegacion {
+  margin: 0px 15px;
 }
 
-.barraNavegacion ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
+.barraNavegacion ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
 
-.barraNavegacion ul li{
+.barraNavegacion ul li {
   padding: 10px;
 }
 
-.barraNavegacion ul li a{
-    color: #242E52;
-    font-size: 13px;
-    text-decoration: none;
+.barraNavegacion ul li a {
+  color: #242e5299;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
 }
 
-.banner{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 20px 40px;
+.barraNavegacion ul li a:hover {
+  opacity: 0.6;
+  transition: 500ms;
 }
 
-.imagenPrincipal{
-    margin-bottom: 50px;
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 40px;
 }
 
-.imagenPrincipal img{
-    width: 100%;
+.imagenPrincipal {
+  margin-bottom: 50px;
 }
 
-.contenidoBanner{
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
+.imagenPrincipal img {
+  width: 100%;
 }
 
-h1{
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 58px;
-    margin-bottom: 20px;
-    text-align: right;
+.contenidoBanner {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.contenidoBanner p{
-    line-height: 26px;
-    text-align: right;
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 20px;
+  text-align: right;
 }
 
-.boton{ 
-    background-color: #8B48BF;
-    border: 0px;
-    border-radius: 50px;
-    margin: 20px 0px;
-    padding: 10px 40px;
-    color: #FFFFFF;
-    font-size: 14px;
-    text-decoration: none;
+.contenidoBanner p {
+  line-height: 26px;
+  text-align: right;
 }
 
-.seccionProfesionales{
-    background-color: #3CDDF3;
-    color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-
+.boton {
+  background-color: #8b48bf;
+  border: 0px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 14px;
+  margin: 20px 0px;
+  padding: 10px 40px;
+  text-decoration: none;
+  transition: all 500ms ease-out;
 }
 
-.seccionProfesionales h2{
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 41px;
-    margin: 40px 30px 20px 30px;
+.boton:hover {
+  opacity: 0.7;
+  scale: 1.1;
 }
 
-.seccionProfesionales p{
- line-height: 24px;
- margin: 20px 30px 40px 30px;
+.seccionProfesionales {
+  background-color: #3cddf3;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
-.seccionArticulos{
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
+.seccionProfesionales h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  margin: 40px 30px 20px 30px;
 }
 
-.seccionArticulos article{
-    margin-left: 60px;
+.seccionProfesionales p {
+  line-height: 24px;
+  margin: 20px 30px 40px 30px;
 }
 
-.tituloArticulo{
-    align-items: center;
-    background-color: rgba(139, 72, 191, 0.3);
-    display: flex
+.seccionArticulos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
 }
 
-.tituloArticulo .boton{
-    color: #FFFFFF;
-    font-weight: 700;
-    left: -14px;
-    margin: 0px;
-    position: relative;
-    padding: 10px 20px;
+.seccionArticulos article {
+  margin-left: 60px;
 }
 
-.tituloArticulo h3{
-    color: #323851;
-    font-weight: 700;
-    padding-right: 10px;
+.tituloArticulo {
+  align-items: center;
+  background-color: rgba(139, 72, 191, 0.3);
+  display: flex;
 }
 
-article p{
-    color: #B3B2B7;
-    line-height: 26px;
-    margin: 30px 15px 20px 0px;
+.tituloArticulo .boton {
+  color: #ffffff;
+  font-weight: 700;
+  left: -14px;
+  margin: 0px;
+  padding: 10px 20px;
+  position: relative;
 }
 
-.seccionMejorMes{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+.tituloArticulo h3 {
+  color: #323851;
+  font-weight: 700;
+  padding-right: 10px;
 }
 
-.seccionMejorMes h2{
-    color: #242E53;
-    font-size: 36px;
-    font-weight: 700;
-    margin: 20px;
+article p {
+  color: #b3b2b7;
+  line-height: 26px;
+  margin: 30px 15px 20px 0px;
 }
 
-.contenidoMejorMes{
-    align-items: center;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
-    margin: 60px 20px 20px;
+.seccionMejorMes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-.contenidoMejorMes img{
-    position: relative;
-    bottom: 35px;
+.seccionMejorMes h2 {
+  color: #242e53;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px;
 }
 
-.nombreJugador{
-    color: #3F4868;
-    font-weight: 700;
+.contenidoMejorMes {
+  align-items: center;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 20px 20px;
 }
 
-.contenidoMejorMes p{
-    text-align: center;
-    margin: 20px;
+.contenidoMejorMes img {
+  bottom: 35px;
+  position: relative;
+  transition: all 500ms ease-out;
 }
 
-.seccionMejoresEquipos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #3CDDF3;
-    margin-top: 10px;
+.contenidoMejorMes img:hover {
+    scale: 1.2;
+    transition: 500ms;
+  }
+
+.nombreJugador {
+  color: #3f4868;
+  font-weight: 700;
 }
 
-.seccionMejoresEquipos h2{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 41px;
-    color: #FFFFFF;
-    text-align: center;
-    margin: 40px 60px 0px;
+.contenidoMejorMes p {
+  margin: 20px;
+  text-align: center;
 }
 
-.saltoLinea{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 41px;
-    color: #FFFFFF;
-    text-align: center;
+.seccionMejoresEquipos {
+  align-items: center;
+  background-color: #3cddf3;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-.saltoLinea::before{
-    content: "\a";
-    white-space: pre;
+.seccionMejoresEquipos h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  margin: 40px 60px 0px;
+  text-align: center;
 }
 
-.seccionMejoresEquipos .boton{
-    background-color: #232C50;
-    margin: 40px 0px;
+.saltoLinea {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  text-align: center;
 }
 
-footer{
-    background-color: #1E1E26;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.saltoLinea::before {
+  content: "\a";
+  white-space: pre;
 }
 
-.suscripcion{
-    width: 85%;
-    margin: 5px;
-    text-align: center;
+.seccionMejoresEquipos .boton {
+  background-color: #232c50;
+  margin: 40px 0px;
 }
 
-#emailUsuario{
-    width: 70%;
-    padding: 10px;
-    margin-right: 5%;
-    margin-top: 40px;
-    border-radius: 50px;
-
+footer {
+  align-items: center;
+  background-color: #1e1e26;
+  display: flex;
+  flex-direction: column;
 }
 
-.botonForm{
-    color: #FFFFFF;
-    padding: 10px 20px;
+.suscripcion {
+  margin: 5px;
+  text-align: center;
+  width: 85%;
 }
 
-.menuFooter{
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
-    margin: 10px 0px;
-    flex-wrap: wrap;
+#emailUsuario {
+  border: none;
+  border-radius: 50px;
+  margin-right: 5%;
+  margin-top: 40px;
+  padding: 10px;
+  width: 70%;
 }
 
-.menuFooter ul{
-    list-style: none;
+.botonForm {
+  color: #ffffff;
+  padding: 10px 20px;
 }
 
-.menuFooter ul li{
-    padding: 8px;
+.botonForm:hover {
+  cursor: pointer;
 }
 
-.menuFooter ul li a{
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: 400;   
+.menuFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0px;
+  width: 70%;
 }
 
-.contenedorLogoRedes{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.menuFooter ul {
+  list-style: none;
 }
 
-.redes{
-    margin: 20px 0px;
-    width: 95%;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
+.menuFooter ul li {
+  padding: 8px;
 }
 
-.redes a{
-    margin: 10px 7%;
+.menuFooter ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 500ms ease-out;
 }
 
-.contenedorLogoRedes img{
-    margin-top: 10px;
+.menuFooter ul li a:hover {
+  opacity: 0.6;
+  transition: 500ms;
 }
 
-.derechos{
-    margin: 40px;
-    font-size: 13px;
-    color: #8C8C94;
+.contenedorLogoRedes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px;
+  width: 95%;
+}
+
+.redes a {
+  margin: 10px 7%;
+  transition: all 500ms ease-out;
+}
+
+.redes a:hover{
+    scale: 1.1;
+    transition: 500ms;
+}
+
+.contenedorLogoRedes img {
+  margin-top: 10px;
+}
+
+.derechos {
+  color: #8c8c94;
+  font-size: 13px;
+  margin: 40px;
 }
 
 .escritorio {
-    display: none;
-    
+  display: none;
 }
 
 @media (min-width: 481px) {
+  .escritorio {
+    display: flex;
+  }
 
+  .mobile {
+    display: none;
+  }
 
-    .escritorio{
-        display: flex;
-    }
+  .encabezado {
+    justify-content: space-around;
+  }
 
-    .mobile{
-        display: none;
-    }
+  .banner {
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 10%;
+  }
 
-    .encabezado{
-        justify-content: space-around;
-    }
+  .imagenPrincipal {
+    padding-right: 5%;
+    width: 50%;
+  }
 
-    .banner{
-        flex-direction: row;
-        margin: 0px 10%;
-        align-items: center;
-    }
+  .contenidoBanner {
+    padding-left: 5%;
+    width: 50%;
+  }
 
-    .imagenPrincipal {
-        padding-right: 5%;
-        width: 50%;
-    }
+  .seccionProfesionales {
+    align-items: center;
+    background-color: #8b48bf;
+    flex-direction: row;
+  }
 
-    .contenidoBanner{
-        padding-left: 5%;
-        width: 50%;
-    }
+  .seccionProfesionales h2 {
+    margin: 40px 30px;
+    padding-left: 10%;
+    width: 50%;
+  }
 
-    .seccionProfesionales{
-        background-color: #8B48BF;
-        flex-direction: row;
-        align-items: center;
+  .seccionProfesionales p {
+    margin: 40px 30px;
+    padding-right: 10%;
+    width: 50%;
+  }
 
-    }
+  .seccionArticulos {
+    background-color: #fafafa;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15%;
+  }
 
-    .seccionProfesionales h2{
-        width: 50%;
-        margin: 40px 30px;
-        padding-left: 10%;
-    }
+  .seccionArticulos article {
+    margin: 0px 0px 20px;
+    padding: 0px 2%;
+    width: 50%;
+  }
 
-    .seccionProfesionales p{
-        width: 50%;
-        margin: 40px 30px;
-        padding-right: 10%;
-    }
+  .tituloArticulo {
+    background-color: #fafafa;
+    left: -60px;
+    padding-right: 50px;
+    position: relative;
+  }
 
-    .seccionArticulos{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        background-color: #FAFAFA;
-        padding-left: 15%;
-    }
+  .seccionArticulos article p {
+    padding-right: 10%;
+  }
 
-    .seccionArticulos article{
-        width: 50%;
-        padding: 0px 2%;
-        margin: 0px 0px 20px;
-    }
+  .seccionMejorMes h2 {
+    margin: 60px 20px;
+  }
 
-    .tituloArticulo{
-        background-color: #FAFAFA;
-        position: relative;
-        left: -60px;
-        padding-right: 50px;
-    }
+  .contenedorMejoresMes {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 5%;
+  }
 
-    .seccionArticulos article p{
-        padding-right: 10%;
-    }
+  .contenidoMejorMes {
+    margin: 60px 0px 30px;
+  }
 
-    .seccionMejorMes h2{
-        margin: 60px 20px;
-    }
+  .seccionMejorMes .boton {
+    margin-bottom: 60px;
+  }
 
-    .contenedorMejoresMes{
-        display: flex;
-        margin: 0px 5%;
-        justify-content: space-around;
-    }
+  .seccionMejoresEquipos {
+    align-items: center;
+    background-color: #8b48bf;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .contenidoMejorMes{
-        margin: 60px 0px 30px;
-    }
+  .seccionMejoresEquipos h2,
+  .saltoLinea {
+    margin: 60px 10%;
+    text-align: left;
+  }
 
-    .seccionMejorMes .boton{
-        margin-bottom: 60px;  
-    }
+  .seccionMejoresEquipos .boton {
+    background-color: #ffffff;
+    color: #8b48bf;
+    margin: 60px 10%;
+    text-align: center;
+  }
 
-    .seccionMejoresEquipos{
-        background-color: #8B48BF;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  footer {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 80px;
+  }
 
-    .seccionMejoresEquipos h2, .saltoLinea{
-        text-align: left;
-        margin: 60px 10%;
-    }
+  .contenedorLogoRedes {
+    justify-content: flex-start;
+    width: 25%;
+  }
 
-    .seccionMejoresEquipos .boton{
-        background-color: #FFFFFF;
-        margin: 60px 10%;
-        color: #8B48BF;
-        text-align: center;
-    }
+  .contenedorLogoRedes img {
+    margin: 10px 0px;
+  }
 
-    footer{
-        flex-direction: row;
-        padding: 30px 80px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+  .redes {
+    justify-content: flex-start;
+    margin: 40px 0px 0px;
+    order: 1;
+  }
 
-    .contenedorLogoRedes{
-        width: 25%;
-        justify-content: flex-start;
-    }
+  .redes a {
+    margin: 3%;
+  }
 
-    .contenedorLogoRedes img{
-        margin: 10px 0px;
-    }
+  .menuFooter {
+    margin: 0px 5px;
+    order: 1;
+    width: 30%;
+  }
 
-    .redes{
-        order: 1;
-        justify-content: flex-start;
-        margin: 40px 0px 0px;
-    }
+  .suscripcion {
+    align-self: flex-start;
+    order: 2;
+    width: 35%;
+  }
 
-    .redes a{
-        margin: 3%;
-    }
+  #emailUsuario {
+    margin-top: 0px;
+  }
 
-    .menuFooter{
-        width: 30%;
-        order: 1;
-        margin: 0px 5px;
-    }
+  .contenedorDerechos {
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    width: 100%;
+  }
 
-    .suscripcion{
-        width: 35%;
-        order: 2;
-        align-self: flex-start;
-    }
-
-    #emailUsuario{
-        margin-top: 0px;
-    }
-
-    .contenedorDerechos{
-        order: 3;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
-    .derechos{
-        margin: 10px;
-    }
-
+  .derechos {
+    margin: 10px;
+  }
 }
