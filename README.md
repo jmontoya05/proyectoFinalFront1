@@ -1,5 +1,5 @@
 # Proyecto Final Front 1 Santiago Montoya y Maria Antonia Ospina
-![html](proyectoFinalFront1/img/html.jpg)
+![html](html.jpg)
 
 ## Entregable Frontend 1 
 
