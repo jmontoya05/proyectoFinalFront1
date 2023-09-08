@@ -1,4 +1,4 @@
-# Proyecto Final Front 1 Santiago Montoya y Maria Antonia Ospina
+# Proyecto Final Front 1 Javier Santiago Montoya y Maria Antonia Ospina
 
 ## Entregable Frontend 1 
 
